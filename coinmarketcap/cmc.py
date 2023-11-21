@@ -53,8 +53,8 @@ def press_readmore_and_scrape(url, time_to_press):
 
     return page_source
 
-def parse_and_save_data(html):
-    soup = BeautifulSoup(html, 'html.parser')
+def parse_and_save_data(page_source):
+    soup = BeautifulSoup(page_source, 'html.parser')
     
     # [Your existing logic to parse the HTML and write to CSV]
     # Ensure you modify this part to work with the new HTML structure if needed
